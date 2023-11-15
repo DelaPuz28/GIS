@@ -3,12 +3,21 @@ include 'db.php';
 
 
 // Set up your database connection
+//$databaseConfig = [
+ //  'host' => 'localhost',
+  //  'user' => 'postgres',
+  //  'password' => 'postgres',
+ //  'dbname' => 'GISMAP',
+//];
+
+
 $databaseConfig = [
-   'host' => 'localhost',
-    'user' => 'postgres',
-    'password' => 'postgres',
-   'dbname' => 'GISMAP',
-];
+    'host' => 'db.buycuwzzxzvvrcibgynq.supabase.co',
+     'user' => 'postgres',
+     'password' => '0909Try_only0909',
+    'dbname' => 'postgres',
+ ];
+
 
 $pdo = new PDO(
     "pgsql:host={$databaseConfig['host']};dbname={$databaseConfig['dbname']}",
@@ -17,7 +26,8 @@ $pdo = new PDO(
 );
 
 // Handle CORS (Cross-Origin Resource Sharing) if needed
-header('Access-Control-Allow-Origin: http://localhost:8080'); // Adjust to match your actual origin
+header('Access-Control-Allow-Origin: https://gis-eta.vercel.app');
+//header('Access-Control-Allow-Origin: http://localhost:8080'); // Adjust to match your actual origin
 header('Access-Control-Allow-Methods: GET'); // Adjust as needed
 //header('Access-Control-Allow-Headers: Content-Type'); // Adjust as needed
 
