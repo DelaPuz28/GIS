@@ -26,10 +26,10 @@ $pdo = new PDO(
 );
 
 // Handle CORS (Cross-Origin Resource Sharing) if needed
-header('Access-Control-Allow-Origin: https://gis-eta.vercel.app');
+header('Access-Control-Allow-Origin: *');
 //header('Access-Control-Allow-Origin: http://localhost:8080'); // Adjust to match your actual origin
-header('Access-Control-Allow-Methods: GET'); // Adjust as needed
-//header('Access-Control-Allow-Headers: Content-Type'); // Adjust as needed
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS'); // Adjust as needed
+header('Access-Control-Allow-Headers: Content-Type'); // Adjust as needed
 
 
 // Define the API endpoint
