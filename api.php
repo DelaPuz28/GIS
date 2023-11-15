@@ -12,10 +12,10 @@ include 'db.php';
 
 
 $databaseConfig = [
-    'host' => 'db.buycuwzzxzvvrcibgynq.supabase.co',
-     'user' => 'postgres',
-     'password' => '0909Try_only0909',
-    'dbname' => 'postgres',
+    'host' => $_ENV['SUPABASE_HOST'],
+    'user' => $_ENV['SUPABASE_USER'],
+    'password' => $_ENV['SUPABASE_PASSWORD'],
+    'dbname' => $_ENV['SUPABASE_DBNAME'],
  ];
 
 
