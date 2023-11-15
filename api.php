@@ -12,10 +12,10 @@ include 'db.php';
 
 
 $databaseConfig = [
-    'host' => $_ENV['SUPABASE_HOST'],
-    'user' => $_ENV['SUPABASE_USER'],
-    'password' => $_ENV['SUPABASE_PASSWORD'],
-    'dbname' => $_ENV['SUPABASE_DBNAME'],
+    'host' => 'ep-broken-meadow-37339063-pooler.us-east-1.postgres.vercel-storage.com',
+    'user' => 'default',
+    'password' => 'NQsRLIHiYE41',
+    'dbname' => 'verceldb',
  ];
 
 
