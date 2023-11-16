@@ -31,9 +31,9 @@ $databaseConfig = [
 
 
 $pdo = new PDO(
-    "pgsql:host={$databaseConfig['host']};dbname={$databaseConfig['dbname']}",
-    $databaseConfig['user'],
-    $databaseConfig['password']
+    "pgsql:host={$databaseConfig['POSTGRES_HOST']};dbname={$databaseConfig['POSTGRES_DATABASE']}",
+    $databaseConfig['POSTGRES_USER'],
+    $databaseConfig['POSTGRES_PASSWORD']
 );
 
 // Handle CORS (Cross-Origin Resource Sharing) if needed

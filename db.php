@@ -1,21 +1,13 @@
 <?php
 
-$server = 'localhost';
-$db_name = 'GISMAP';
-$username = 'postgres';
-$password = 'postgres';
-$port   = '5432';
+//$server = 'localhost';
+//$db_name = 'GISMAP';
+//$username = 'postgres';
+//$password = 'postgres';
+//$port   = '5432';
 
 //$dbconn = pg_connect("host=$server dbname=$db_name user=$username password=$password port=$port");
 
-<<<<<<< HEAD
-=======
- $server = 'ep-broken-meadow-37339063-pooler.us-east-1.postgres.vercel-storage.com';
- $db_name= 'verceldb';
- $username= 'default';
- $password= 'NQsRLIHiYE41';
- $port= '5432';
->>>>>>> f4ab7c3cfd0e6c3058c37979bf3f4e9546a29011
 
 $url = 'postgres://default:NQsRLIHiYE41@ep-broken-meadow-37339063-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb';
 $prisma_url = 'postgres://default:NQsRLIHiYE41@ep-broken-meadow-37339063-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15';
