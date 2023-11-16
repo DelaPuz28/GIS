@@ -4,19 +4,30 @@ include 'db.php';
 
 // Set up your database connection
 //$databaseConfig = [
- //  'host' => 'localhost',
-  //  'user' => 'postgres',
-  //  'password' => 'postgres',
- //  'dbname' => 'GISMAP',
+  // 'host' => 'localhost',
+   // 'user' => 'postgres',
+   // 'password' => 'postgres',
+   //'dbname' => 'GISMAP',
 //];
 
 
+//$databaseConfig = [
+  //  'host' => 'db.buycuwzzxzvvrcibgynq.supabase.co',
+  //   'user' => 'postgres',
+   //  'password' => '0909Try_only0909',
+   // 'dbname' => 'postgres',
+// ];
+
 $databaseConfig = [
-    'host' => 'db.buycuwzzxzvvrcibgynq.supabase.co',
-     'user' => 'postgres',
-     'password' => '0909Try_only0909',
-    'dbname' => 'postgres',
+    'POSTGRES_URL' => 'postgres://default:NQsRLIHiYE41@ep-broken-meadow-37339063-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb',
+    'POSTGRES_PRISMA_URL' => 'postgres://default:NQsRLIHiYE41@ep-broken-meadow-37339063-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15',
+    'POSTGRES_URL_NON_POOLING'=> 'postgres://default:NQsRLIHiYE41@ep-broken-meadow-37339063.us-east-1.postgres.vercel-storage.com:5432/verceldb',
+    'POSTGRES_HOST' => 'ep-broken-meadow-37339063-pooler.us-east-1.postgres.vercel-storage.com',
+    'POSTGRES_USER' => 'default',
+    'POSTGRES_PASSWORD' => 'NQsRLIHiYE41',
+    'POSTGRES_DATABASE' => 'verceldb',
  ];
+
 
 
 $pdo = new PDO(
@@ -26,8 +37,8 @@ $pdo = new PDO(
 );
 
 // Handle CORS (Cross-Origin Resource Sharing) if needed
-header('Access-Control-Allow-Origin: https://gis-eta.vercel.app');
-//header('Access-Control-Allow-Origin: http://localhost:8080'); // Adjust to match your actual origin
+//header('Access-Control-Allow-Origin: https://gis-eta.vercel.app');
+header('Access-Control-Allow-Origin: http://localhost:8080'); // Adjust to match your actual origin
 header('Access-Control-Allow-Methods: GET'); // Adjust as needed
 //header('Access-Control-Allow-Headers: Content-Type'); // Adjust as needed
 
