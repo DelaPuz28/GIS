@@ -365,7 +365,7 @@ var drawLayer = new ol.layer.Vector({
 // vector source para sa edit features
 var editSource = new ol.source.Vector()
 
-fetch('api.php')
+fetch('http://trygis.infinityfreeapp.com/api.php')
   .then(function (response) {
     return response.json();
   })
