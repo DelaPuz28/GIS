@@ -1,0 +1,14 @@
+{
+    "headers": [
+      {
+        "source": "https://trygis.infinityfreeapp.com/api.php",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "https://gis-eta.vercel.app"
+          }
+        ]
+      }
+    ]
+  }
+  
