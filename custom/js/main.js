@@ -245,7 +245,7 @@ var boundary = new ol.layer.Vector({
 // source para sa featurelayer
 var featureLayerSource = new ol.source.Vector();
 
-  fetch('http://trygis.infinityfreeapp.com/api.php')
+  fetch('https://trygis.infinityfreeapp.com/api.php')
   .then(function (response) {
     return response.json();
   })
@@ -263,7 +263,7 @@ var featureLayerSource = new ol.source.Vector();
 // nirerefresh yung features pagtapos mag add or mag edit ng points,linestring,polygon
 function refresh(){
   featureLayerSource.clear();
-  fetch('http://trygis.infinityfreeapp.com/api.php')
+  fetch('https://trygis.infinityfreeapp.com/api.php')
   .then(function (response) {
     return response.json();
   })
@@ -365,7 +365,7 @@ var drawLayer = new ol.layer.Vector({
 // vector source para sa edit features
 var editSource = new ol.source.Vector()
 
-fetch('http://trygis.infinityfreeapp.com/api.php')
+fetch('https://trygis.infinityfreeapp.com/api.php')
   .then(function (response) {
     return response.json();
   })
